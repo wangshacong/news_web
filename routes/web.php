@@ -97,31 +97,31 @@ Route::get('cxjy_admin/logout', 'Admin\AdminController@logout');
 
     //第三个网站
     //分类列表
-    Route::get('/cxjy_admin/sort3','Admin\Sort1Controller@sortindex');
+    Route::get('/cxjy_admin/sort3','Admin\Sort3Controller@sortindex');
     //分类添加页面
-    Route::get('/cxjy_admin/sort3/create', 'Admin\Sort1Controller@sortcreate');
+    Route::get('/cxjy_admin/sort3/create', 'Admin\Sort3Controller@sortcreate');
     //分类添加
-    Route::get('/cxjy_admin/sort3/shore', 'Admin\Sort1Controller@sortshore');
+    Route::get('/cxjy_admin/sort3/shore', 'Admin\Sort3Controller@sortshore');
     //分类修改页
-    Route::get('/cxjy_admin/sort3/{id}/edit', 'Admin\Sort1Controller@sortedit');
+    Route::get('/cxjy_admin/sort3/{id}/edit', 'Admin\Sort3Controller@sortedit');
     //分类修改
-    Route::get('/cxjy_admin/sort3/{id}/update','Admin\Sort1Controller@sortupdate');
+    Route::get('/cxjy_admin/sort3/{id}/update','Admin\Sort3Controller@sortupdate');
     //分类删除
-    Route::get('/cxjy_admin/sort3/{id}/destroy','Admin\Sort1Controller@sortdestroy');
+    Route::get('/cxjy_admin/sort3/{id}/destroy','Admin\Sort3Controller@sortdestroy');
     
     //第三个网站
     //新闻列表
-    Route::get('/cxjy_admin/news3', 'Admin\Sort1Controller@newsindex');
+    Route::get('/cxjy_admin/news3', 'Admin\Sort3Controller@newsindex');
     //新闻添加页
-    Route::get('/cxjy_admin/news3/create', 'Admin\Sort1Controller@newscreate');
+    Route::get('/cxjy_admin/news3/create', 'Admin\Sort3Controller@newscreate');
     //新闻添加
-    Route::post('/cxjy_admin/news3/shore', 'Admin\Sort1Controller@newsshore');
+    Route::post('/cxjy_admin/news3/shore', 'Admin\Sort3Controller@newsshore');
     //新闻修改页
-    Route::get('/cxjy_admin/news3/{id}/edit','Admin\Sort1Controller@newsedit');
+    Route::get('/cxjy_admin/news3/{id}/edit','Admin\Sort3Controller@newsedit');
     //新闻修改
-    Route::post('/cxjy_admin/news3/{id}/update', 'Admin\Sort1Controller@newsupdate');
+    Route::post('/cxjy_admin/news3/{id}/update', 'Admin\Sort3Controller@newsupdate');
     //新闻删除
-    Route::get('/cxjy_admin/news3/{id}/destroy', 'Admin\Sort1Controller@destroy');
+    Route::get('/cxjy_admin/news3/{id}/destroy', 'Admin\Sort3Controller@destroy');
 
     //全站新闻发布页
     Route::get('/cxjy_admin/article/create', 'Admin\AdminController@articlecreate');
