@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Symfony\Component\HttpFoundation\Session\Session;
 
-class Sort2Controller extends Controller
+class Sort3Controller extends Controller
 {
     //
     //第一个网站的文章列表页
