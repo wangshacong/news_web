@@ -1,0 +1,86 @@
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,form,input,button,textarea{margin:0;padding:0;word-break:break-all;word-wrap:break-word;}
+body,button,input,select,textarea{font:12px/1.5 -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif; color:#252a2d;font-weight:300;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,ol{list-style: none;}
+li{list-style:none;}
+div,input,textarea{outline-style:none;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;}
+em,i{font-style:normal;font-weight:300;}
+img {border: 0;vertical-align: middle;}
+a {text-decoration:none;outline:0;color:#252a2d;}
+a:hover{text-decoration:none;color:#0093e8;}
+
+/*通用导航*/
+.top{ width:100%; border-bottom:#DADADA solid 1px;-khtml-box-shadow:rgba(0,0,0,0.05) 0 1px 1px;-ms-box-shadow:rgba(0,0,0,0.05) 0 1px 1px;-o-box-shadow:rgba(0,0,0,0.05) 0 1px 1px; -moz-box-shadow:rgba(0,0,0,0.05) 0 1px 1px;-webkit-box-shadow:rgba(0,0,0,0.05) 0 1px 1px;box-shadow:rgba(0,0,0,0.05) 0 1px 1px;}
+.top_con{ width:1240px; margin:0 auto; position:relative;}
+.nav{display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center; padding:16px 0;}
+.nav a{ display:inline-block; color:#6f6f6f; font-size:13px;line-height:25px;}
+.nav a:hover{color:#02afff;}
+.nav ul{display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-pack:space-between;-ms-flex-pack:space-between;justify-content:space-between;}
+.nav li{ display:inline-block;}
+.nav_news,.nav_mobile,.nav_game,.nav_platform{ font-weight:normal;color:#252a2d;}
+.nav1,.nav2{border-right:#E8E8E8 solid 1px; padding:0 31px;}
+.nav1{ width:400px;}
+.nav2{ width:220px;}
+.nav3{ width:70px; padding-left:31px;}
+.nav .go_index{border-right:#E8E8E8 solid 1px;padding:5px 31px 5px 0;}
+.nav .go_index a{font-size:16px; font-weight:noraml; line-height:20px; color:#252a2d;}
+.nav .go_index a:hover i{color:#02afff;}
+.nav .go_index i{ display:block; font-size:12px; font-weight:lighter; color:#b9b9b9;}
+.nav .nav_news{ background:url(../images/nav_icons.png) no-repeat left 3px; padding-left:22px;color:#252a2d;}
+.nav .nav_mobile{ background:url(../images/nav_icons.png) no-repeat 3px -24px; padding-left:22px;color:#252a2d;}
+.nav .nav_game{ background:url(../images/nav_icons.png) no-repeat left -49px; padding-left:22px;color:#252a2d;}
+.nav .nav_platform{ background:url(../images/nav_icons.png) no-repeat left -74px; padding-left:22px;color:#252a2d;}
+.nav_others{ position:absolute; right:0; top:19px;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center; margin-right:-8px;}
+.nav_others a{text-align:center; font-size:12px;color:#a9a9a9; display:block; padding:27px 8px 0;}
+.nav_others a:hover{color:#4bc3fb;}
+.search_item{ background:url(../images/icon_search.png) no-repeat center 3px; background-size:19px;}
+.search_item:hover{transition: all 0.2s;background-size:22px; background-position:center 0px;}
+.app_item{ background:url(../images/icon_app.png) no-repeat center 2px; background-size:14px;}
+.app_item:hover{transition: all 0.2s;background-size:16px;background-position:center 0px;}
+.rss_item{ background:url(../images/icon_rss.png) no-repeat center 3px; background-size:19px;}
+.rss_item:hover{transition: all 0.2s;background-size:22px;background-position:center 0px;}
+.qr_item{ background:url(../images/icon_qr.png) no-repeat center 3px; background-size:19px;}
+.qr_item:hover{transition: all 0.2s;background-size:22px;background-position:center 0px;}
+/*底部*/
+.web_bottom{ width:100%; background-color:#2C3034; padding:35px 0; margin-top:70px;}
+/*合作伙伴*/
+.friends{ width:1240px; margin:0 auto;}
+.friends .tit{display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-pack:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center; padding-bottom:15px;}
+.friends .tit a{ color:#FFF; line-height:40px; display:inline-block; margin-right:37px;}
+.friends .candou_logo{ background:url(../images/candou_logo.png) no-repeat 0 0; background-size:89px; width:89px; height:39px;}
+.friends .epchina_logo{ background:url(../images/ep_logo.png) no-repeat 0 0; background-size:113px; width:113px; height:29px;}
+.friend_list{display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;flex-wrap:wrap;}
+.friend_list a{ width:12.5%; color:#9ba1a8; font-size:14px; line-height:27px;height:27px;overflow:hidden;white-space:nowrap;word-break:keep-all;text-overflow:ellipsis;text-overflow: ellipsis;/* IE/Safari */-ms-text-overflow: ellipsis;-o-text-overflow:ellipsis;/* Opera */-moz-binding:url("ellipsis.xml#ellipsis");}
+.friend_list a:hover{ color:#FFF;}
+/*版权*/
+.footer{width:1240px; margin:0 auto;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-pack:space-between;-ms-flex-pack:space-between;justify-content:space-between; border-top:#414447 solid 1px; margin-top:40px; padding-top:40px;}
+.footer_nav a{ color:#929BA0; font-size:15px;}
+.footer_nav a::after{content: "|"; color:#52595d; padding:0 15px; font-size:12px;}
+.footer_nav a:hover{ color:#FFF;}
+.copyright{ margin-top:70px;}
+.support a{ margin-right:50px;}
+.copyright p{ font-size:12px; color:#71787d; line-height:24px; margin-top:7px;}
+.copyright p a{color:#929BA0;}
+.copyright p a:hover{color:#FFF;}
+.qr{display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-pack:space-between;-ms-flex-pack:space-between;justify-content:space-between;}
+.qr_tw,.qr_jqx{ margin-left:40px; text-align:center;}
+.qr_tw img,.qr_jqx img{ border:#FFF solid 11px; width:88px; height:88px;}
+.qr_tw p,.qr_jqx p{ font-size:14px; color:#94999f; line-height:32px; padding-top:3px;}
+@media (max-width:1366px){
+.top_con,.footer,.friends{ width:1000px;}
+.nav .go_index{ padding-right:20px;}
+.nav1 {width: 366px;}
+.nav2 {width: 206px;}
+.nav1, .nav2{ padding:0 20px;}
+.nav3 {padding-left:20px;}
+.nav_others a{ padding:27px 5px 0;}
+.nav_others{ margin-right:-5px;}
+.footer_nav a{ font-size:13px;}
+.footer_nav a::after{ padding:0 10px;}
+.qr_tw img, .qr_jqx img{ width:80px; height:80px;border: #FFF solid 8px;}
+.qr_tw, .qr_jqx{ margin-left:20px;}
+.qr_tw p, .qr_jqx p{ font-size:12px; padding-top:0;}
+.copyright{ margin-top:40px;}
+.copyright p{ line-height:18px;}
+}
