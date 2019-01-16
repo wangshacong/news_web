@@ -67,11 +67,11 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a href="/cxjy_admin/news12"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                        <a href="/cxjy_admin/news2"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
                     </li>
 
                     <li>
-                        <a href="/cxjy_admin/news12/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                        <a href="/cxjy_admin/news2/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
                     </li>
                     <li>
                         <a href="/cxjy_admin/sort2"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
@@ -88,11 +88,11 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="/cxjy_admin/news13"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                            <a href="/cxjy_admin/news3"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
                         </li>
     
                         <li>
-                            <a href="/cxjy_admin/news13/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                            <a href="/cxjy_admin/news3/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
                         </li>
                         <li>
                             <a href="/cxjy_admin/sort3"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
