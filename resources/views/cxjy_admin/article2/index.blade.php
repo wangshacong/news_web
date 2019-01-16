@@ -34,7 +34,7 @@
 					</form>-->
             <xblock>
                 <!--<button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon">&#xe640;</i>批量删除</button>--><button
-                    class="layui-btn"><a href="news2/create"><i class="layui-icon">&#xe608;</i>添加</a></button>
+                    class="layui-btn"><a href="/cxjy_admin/news2/create"><i class="layui-icon">&#xe608;</i>添加</a></button>
                 <!--<span class="x-right" style="line-height:40px">共有数据：88 条</span>-->
             </xblock>
             <table class="layui-table">
@@ -102,10 +102,10 @@
                                 }
                                 document.onclick = delete_confirm;
                             </script>
-                            <a title="编辑" href="/cxjy_admin/news12/{{$v['id']}}/edit">
+                            <a title="编辑" href="/cxjy_admin/news2/{{$v['id']}}/edit">
                                 <i class="layui-icon">&#xe642;</i>
                             </a>
-                            <a href="/cxjy_admin/news12/{{$v['id']}}/destroy" onClick="delete_confirm">删除</a>
+                            <a href="/cxjy_admin/news2/{{$v['id']}}/destroy" onClick="delete_confirm">删除</a>
 
                         </td>
                     </tr>

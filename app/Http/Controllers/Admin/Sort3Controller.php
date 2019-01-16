@@ -66,7 +66,7 @@ class Sort2Controller extends Controller
         $article->title = $request->title;
         $article->fenlei_id = $request->fenlei;
         if ($request->hasFile('pic')) {
-            $article->news_pic = '/'.$request->pic->store('news_pic/'.date('Ymd'));
+            $article->news_pic = '/'.$request->pic->store('news3_pic/'.date('Ymd'));
         }
         $article->content = $request->content;
 

@@ -41,7 +41,7 @@ class Sort2Controller extends Controller
             $content->news_pic = '/'.$request->pic->store('news2_pic/'.date('Ymd'));
         }
         if ($content->save()) {
-            return redirect('/cxjy_admin/news12')->with('success','发布成功');
+            return redirect('/cxjy_admin/news2')->with('success','发布成功');
         } else {
             return back()->with('error','发布失败');
         }
@@ -66,12 +66,12 @@ class Sort2Controller extends Controller
         $article->title = $request->title;
         $article->fenlei_id = $request->fenlei;
         if ($request->hasFile('pic')) {
-            $article->news_pic = '/'.$request->pic->store('news_pic/'.date('Ymd'));
+            $article->news_pic = '/'.$request->pic->store('news2_pic/'.date('Ymd'));
         }
         $article->content = $request->content;
 
         if($article->save()) {
-            return redirect('/cxjy_admin/news12')->with('success','修改成功');
+            return redirect('/cxjy_admin/news2')->with('success','修改成功');
         } else {
             return back()->with('error','修改失败');
         }
