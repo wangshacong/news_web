@@ -142,7 +142,7 @@ class Sort3Controller extends Controller
     {
        $fenlei = Fenlei3::findOrfail($id);
        if ($fenlei->delete()) {
-        if ($article = Article::where('fenlei_id', $id)->delete()) {
+        if ($article = Article3::where('fenlei_id', $id)->delete()) {
             return back()->with('success', '删除成功');
             }else{
                 return back()->with('success', '删除失败');
