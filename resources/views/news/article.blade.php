@@ -27,6 +27,15 @@
     <!--[if IE 9]>
         <link rel="stylesheet" type="text/css" href="css/iestyle_8.css"/>
 <![endif]-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?335192a0356f2e75ce13fe1c6ad86b73";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body>
@@ -83,13 +92,13 @@
                 <div id="content">
                     <!---文章开始-->
                     <p align="center"><img align="" alt="" border="0" src="{{$v['news_pic']}}" width="550" /></p>
-                    
+
                     <?php
                         echo "<p>{$v['content']}</p>";
                     ?>
                     <!---文章end-->
                 </div>
-                
+
 
                 <div class="relative_news" style="margin-top:35px;">
                     <h2 class="tit2">您可能也感兴趣:</h2>
@@ -102,7 +111,7 @@
                         @foreach($zuixin as $val)
                         <li><a href="/article/{{$val->id}}" target="_blank">{{$val->title}}</a></li>
                         @endforeach
-                        
+
                     </ul>
                 </div>
                 <!---您可能感兴趣end-->
@@ -143,8 +152,7 @@
                     <h2 class="tit">今日热点</h2>
                     <div class="hotpot_con">
                         @foreach($redian as $v)
-                        <div class="hotpot_list"><a href="/article/{{$v->id}}" target="_blank"><img
-                                    src="{{$v->news_pic}}"
+                        <div class="hotpot_list"><a href="/article/{{$v->id}}" target="_blank"><img src="{{$v->news_pic}}"
                                     alt="" />
                                 <h4>{{$v->title}}</h4>
                             </a>

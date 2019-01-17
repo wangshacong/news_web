@@ -19,6 +19,15 @@
 	<link href="/images/favicon.ico" rel="shortcut icon" type="images/x-icon" />
 	<link href="/css/list_style.css" type="text/css" rel="stylesheet" rev="stylesheet" media="screen" />
 	<link href="/css/base.css" type="text/css" rel="stylesheet" rev="stylesheet" media="screen" />
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?335192a0356f2e75ce13fe1c6ad86b73";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 </head>
 
 <body>
@@ -52,13 +61,14 @@
 							<a href="/article/{{$v['id']}}" target="_blank">
 								<h4>{{$v['title']}}</h4>
 							</a>
-							<div class="time_tag" >
-								 <span style="overflow:hidden; width:450px;display:block;">{{preg_replace('/<.*?>/','',$v['content'])}}</span><span><a href="/article/{{$v['id']}}">【详情】</a></span>
-								
+							<div class="time_tag">
+								<span style="overflow:hidden; width:450px;display:block;">{{preg_replace('/<.*?>/','',$v['content'])}}</span><span><a
+									 href="/article/{{$v['id']}}">【详情】</a></span>
+
 							</div>
 							<div class="time_tag">
-									<span>{{$v['created_at']}}</span>
-								
+								<span>{{$v['created_at']}}</span>
+
 							</div>
 						</div>
 
