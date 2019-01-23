@@ -101,7 +101,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => 'zjscxnews',
+            'database' => 'zjscnews',
             'username' => 'root',
             'password' => 'jinyu2017666',
             'unix_socket' => env('DB_SOCKET', ''),
