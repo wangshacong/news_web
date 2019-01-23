@@ -83,26 +83,174 @@
                 </ul>
             </li>
             <li class="list">
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6a3;</i>news3<i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/cxjy_admin/news3"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                    </li>
+
+                    <li>
+                        <a href="/cxjy_admin/news3/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort3"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort3/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="list">
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6a3;</i>news4<i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/cxjy_admin/news4"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                    </li>
+
+                    <li>
+                        <a href="/cxjy_admin/news4/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort4"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort4/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="list">
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6a3;</i>news5<i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/cxjy_admin/news5"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                    </li>
+
+                    <li>
+                        <a href="/cxjy_admin/news5/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort5"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort5/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="list">
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6a3;</i>news6<i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/cxjy_admin/news6"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                    </li>
+
+                    <li>
+                        <a href="/cxjy_admin/news6/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort6"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort6/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="list">
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6a3;</i>news7<i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="/cxjy_admin/news7"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                    </li>
+
+                    <li>
+                        <a href="/cxjy_admin/news7/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort7"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                    </li>
+                    <li>
+                        <a href="/cxjy_admin/sort7/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="list">
                     <a href="javascript:;">
-                        <i class="iconfont">&#xe6a3;</i>news3<i class="iconfont nav_right">&#xe697;</i>
+                        <i class="iconfont">&#xe6a3;</i>news8<i class="iconfont nav_right">&#xe697;</i>
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="/cxjy_admin/news3"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                            <a href="/cxjy_admin/news8"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
                         </li>
     
                         <li>
-                            <a href="/cxjy_admin/news3/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                            <a href="/cxjy_admin/news8/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
                         </li>
                         <li>
-                            <a href="/cxjy_admin/sort3"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                            <a href="/cxjy_admin/sort8"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
                         </li>
                         <li>
-                            <a href="/cxjy_admin/sort3/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                            <a href="/cxjy_admin/sort8/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
                         </li>
     
                     </ul>
                 </li>
+                <li class="list">
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe6a3;</i>news9<i class="iconfont nav_right">&#xe697;</i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/cxjy_admin/news9"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                            </li>
+        
+                            <li>
+                                <a href="/cxjy_admin/news9/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                            </li>
+                            <li>
+                                <a href="/cxjy_admin/sort9"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                            </li>
+                            <li>
+                                <a href="/cxjy_admin/sort9/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                            </li>
+        
+                        </ul>
+                    </li>
+                    <li class="list">
+                            <a href="javascript:;">
+                                <i class="iconfont">&#xe6a3;</i>news10<i class="iconfont nav_right">&#xe697;</i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/cxjy_admin/news10"><i class="iconfont">&#xe6a7;</i> 新闻列表 </a>
+                                </li>
+            
+                                <li>
+                                    <a href="/cxjy_admin/news10/create"><i class="iconfont">&#xe6a7;</i> 新闻添加 </a>
+                                </li>
+                                <li>
+                                    <a href="/cxjy_admin/sort10"><i class="iconfont">&#xe6a7;</i>分类列表 </a>
+                                </li>
+                                <li>
+                                    <a href="/cxjy_admin/sort10/create"><i class="iconfont">&#xe6a7;</i> 添加分类 </a>
+                                </li>
+            
+                            </ul>
+                        </li>
+
             {{-- <li class="list">
                 <a href="javascript:;">
                     <i class="iconfont">&#xe70b;</i> 友链管理

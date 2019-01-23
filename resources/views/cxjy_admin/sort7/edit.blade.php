@@ -8,7 +8,7 @@
     <!-- 左侧主体结束 -->
     {{-- <script src="http://code.jquery.com/jquery-latest.js"></script> --}}
         
-            <form class="layui-form" action="/cxjy_admin/sort3/{{$fenlei['id']}}/update" method="get">
+            <form class="layui-form" action="/cxjy_admin/sort7/{{$fenlei['id']}}/update" method="get">
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">分类名</label>

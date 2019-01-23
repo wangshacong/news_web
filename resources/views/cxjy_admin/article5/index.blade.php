@@ -33,8 +33,8 @@
 						</div>
 					</form>-->
             <xblock>
-                <!--<button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon">&#xe640;</i>批量删除</button>-->
-                <a href="/cxjy_admin/sort5/create"><button class="layui-btn"><i class="layui-icon">&#xe608;</i>添加</button></a>
+                <!--<button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon">&#xe640;</i>批量删除</button>--><button
+                    class="layui-btn"><a href="/cxjy_admin/news5/create"><i class="layui-icon">&#xe608;</i>添加</a></button>
                 <!--<span class="x-right" style="line-height:40px">共有数据：88 条</span>-->
             </xblock>
             <table class="layui-table">
@@ -47,10 +47,19 @@
                             ID
                         </th>
                         <th>
-                            分类名称
+                            标题
                         </th>
                         <th>
-                            创建日期
+                            作者
+                        </th>
+                        <th>
+                            分类
+                        </th>
+                        <th>
+                            点击
+                        </th>
+                        <th>
+                            发布日期
                         </th>
                         <th>
                             操作
@@ -58,12 +67,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($fenlei as $v)
+                    @foreach($article as $v)
                     <tr>
                         <!--<td><input type="checkbox" value="1" name=""></td>-->
                         <td>{{$v['id']}}</td>
-                        <td>{{$v['fenlei_name']}}</td>
-                        <td>{{$v['created_at']}}</td>
+                        <td><u style="cursor:pointer" onclick="<!--member_show('张三','member-show.html','10001','360','400')-->"><a
+                                    href="/article/{{$v['id']}}" target="_blank">{{$v['title']}}</a></u></td>
+                        <td>{{$v['zuozhe']}}</td>
+                        <td>{{$v->fenlei['fenlei_name']}}</td>
+                        <td>{{$v['dianji']}}</td>
+                        <td>{{$v['create_time']}}</td>
                         {{-- <td class="td-status">
                             <span class="layui-btn layui-btn-normal layui-btn-mini">已启用</span>
                         </td> --}}
@@ -78,7 +91,7 @@
 									<a style="text-decoration:none" onclick="member_password('修改密码','member-password.html','10001','600','400')" href="javascript:;" title="修改密码">
 										<i class="layui-icon">&#xe631;</i>
 									</a>-->
-                            <a title="删除" href="" onclick="member_del(this,'1')" style="text-decoration:none">
+                            <a title="删除" href="news1/{{$v['id']}}/destroy" onclick="member_del(this,'1')" style="text-decoration:none">
                                 <i class="layui-icon">&#xe640;</i>
                             </a>
                             <script language="JavaScript">
@@ -89,10 +102,10 @@
                                 }
                                 document.onclick = delete_confirm;
                             </script>
-                            <a title="编辑" href="/cxjy_admin/sort5/{{$v['id']}}/edit">
+                            <a title="编辑" href="/cxjy_admin/news5/{{$v['id']}}/edit">
                                 <i class="layui-icon">&#xe642;</i>
                             </a>
-                            <a href="/cxjy_admin/sort5/{{$v['id']}}/destroy" onClick="delete_confirm">删除</a>
+                            <a href="/cxjy_admin/news5/{{$v['id']}}/destroy" onClick="delete_confirm">删除</a>
 
                         </td>
                     </tr>
@@ -102,7 +115,7 @@
                 </tbody>
 
             </table>
-            {{$fenlei->appends(request()->all())->links()}}
+            {{$article->appends(request()->all())->links()}}
             <!-- 右侧内容框架，更改从这里结束 -->
         </div>
     </div>

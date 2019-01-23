@@ -8,9 +8,9 @@
     <!-- 左侧主体结束 -->
     <div class="page-content">
         <div class="content">
-
-            <script>
-                function changepic() {
+                
+                <script>
+                        function changepic() {
                             var reads= new FileReader();
                             f=document.getElementById('file').files[0];
                             reads.readAsDataURL(f);
@@ -20,57 +20,64 @@
                         }
                     </script>
             <!-- 右侧内容框架，更改从这里开始 -->
-            <form class="layui-form" action="/cxjy_admin/news3/shore" method="post" enctype="multipart/form-data">
-            {{-- <form class="layui-form" action="/cxjy_admin/mysql2" method="post" enctype="multipart/form-data"> --}}
+            <form class="layui-form" action="/cxjy_admin/news9/{{$article['id']}}/update" method="post" enctype="multipart/form-data">
                 <div class="layui-form-item">
                     <label class="layui-form-label">标题</label>
                     <div class="layui-input-block">
-                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                        <input type="text" name="title" lay-verify="title" autocomplete="off" value="{{$article['title']}}" class="layui-input">
                     </div>
                 </div>
 
                 <div class="layui-form-item">
-
+                    
                     <div class="layui-inline">
                         <label class="layui-form-label">选择分类</label>
                         <div class="layui-input-inline">
                             <select name="fenlei" lay-verify="required" lay-search="" style="z-index:2;">
                                 <option value="">请选择</option>
                                 @foreach($fenlei as $v)
-                                <option value="{{$v['id']}}">{{$v['fenlei_name']}}</option>
+                                <option value="{{$v['id']}}" {{$v['id']}}=={{$article['fenlei_id']}} ? selected="selected" : " ">{{$v['fenlei_name']}}</option>
                                 @endforeach
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="layui-form-item">
-
-                    选择图片：<input id="file" name="pic" class="filepath" onchange="changepic(this)" type="file" accept="image/*"><br>
-                    <label for="file" class='btn btn-success'>Choose a file</label>
-                    <img src="" id="show" width="200">
+                
+                        选择图片：<input id="file" name="pic" class="filepath" onchange="changepic(this)" type="file" accept="image/*"><br>
+                <label for="file" class='btn btn-success'>Choose a file</label>
+                <img src="{{$article['news_pic']}}" id="show" width="200">
                 </div>
 
-                    <div class="layui-form-item" style="margin-top:50px;">
-                        <!-- 配置文件 -->
-                        新闻内容：<script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
-                        <!-- 编辑器源码文件 -->
-                        <script type="text/javascript" src="/ueditor/ueditor.all.js"></script>
-                        <script id="editor" name="content" type="text/plain" style="width:90%;height:500px;margin-left:100px;"></script>
-                        <script type="text/javascript">
-                            //实例化编辑器
-                            //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-                            var ue = UE.getEditor('editor');
+                <div class="layui-form-item" style="margin-top:50px;">
+                    <!-- 配置文件 -->
+                    新闻内容：<script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
+                    
+                    
+                    
+                    <!-- 编辑器源码文件 -->
+                    <script type="text/javascript" src="/ueditor/ueditor.all.js"></script>
+                    <script src="/ueditor/ueditor.parse.js"></script>
+                    <script id="editor" name="content" type="text/plain" style="width:90%;height:500px;margin-left:100px;"><?php echo $article['content'] ?></script>
+                    <script type="text/javascript">
+                        
+                        //实例化编辑器
+                        //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+                        var ue = UE.getEditor('editor');
+                    </script>
 
-                        </script>
-                    </div>
 
-                    <div class="layui-form-item">
-                        <div class="layui-input-block">
-                            <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
-                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-                        </div>
+
+
+                </div>
+                
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
                     </div>
-                    {{csrf_field()}}
+                </div>
+                {{csrf_field()}}
             </form>
             {{-- <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
                 <legend>方框风格的表单集合</legend>
@@ -200,7 +207,7 @@
 <!-- 中部结束 -->
 <!-- 底部开始 -->
 <div class="footer">
-    <div class="copyright">Copyright ©2017 x-cxjy_admin v2.3 All Rights Reserved. 本后台系统由X前端框架提供前端技术支持</div>
+    <div class="copyright">Copyright ©2018 x-admin v2.3 All Rights Reserved. 本后台系统由X前端框架提供前端技术支持</div>
 </div>
 <!-- 底部结束 -->
 <!-- 背景切换开始 -->

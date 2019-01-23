@@ -20,7 +20,7 @@
                         }
                     </script>
             <!-- 右侧内容框架，更改从这里开始 -->
-            <form class="layui-form" action="/cxjy_admin/news3/shore" method="post" enctype="multipart/form-data">
+            <form class="layui-form" action="/cxjy_admin/news9/shore" method="post" enctype="multipart/form-data">
             {{-- <form class="layui-form" action="/cxjy_admin/mysql2" method="post" enctype="multipart/form-data"> --}}
                 <div class="layui-form-item">
                     <label class="layui-form-label">标题</label>
@@ -200,7 +200,7 @@
 <!-- 中部结束 -->
 <!-- 底部开始 -->
 <div class="footer">
-    <div class="copyright">Copyright ©2017 x-cxjy_admin v2.3 All Rights Reserved. 本后台系统由X前端框架提供前端技术支持</div>
+    <div class="copyright">Copyright ©2018 x-cxjy_admin v2.3 All Rights Reserved. 本后台系统由X前端框架提供前端技术支持</div>
 </div>
 <!-- 底部结束 -->
 <!-- 背景切换开始 -->

@@ -8,12 +8,12 @@
     <!-- 左侧主体结束 -->
     {{-- <script src="http://code.jquery.com/jquery-latest.js"></script> --}}
         
-            <form class="layui-form" action="/cxjy_admin/sort3/{{$fenlei['id']}}/update" method="get">
+            <form class="layui-form" action="/cxjy_admin/sort4/shore" method="get">
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">分类名</label>
                     <div class="layui-input-inline int">
-                        <input type="text" name="fenlei_name" id="name" lay-verify="required" value="{{$fenlei['fenlei_name']}}" autocomplete="off" class="layui-input">
+                        <input type="text" name="fenlei_name" id="name" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                     </div>
                 </div>
 
@@ -241,7 +241,7 @@
                 </div> --}}
                 <div class="layui-form-item">
                     <div class="layui-input-block">
-                        <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">修改</button>
+                        <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">添加</button>
                         <button type="reset" class="layui-btn layui-btn-primary">重置</button>
                     </div>
                 </div>
@@ -375,7 +375,7 @@
 <!-- 中部结束 -->
 <!-- 底部开始 -->
 <div class="footer">
-    <div class="copyright">Copyright ©2017 x-admin v2.3 All Rights Reserved. 本后台系统由X前端框架提供前端技术支持</div>
+    <div class="copyright">Copyright ©2017 x-cxjy_admin v2.3 All Rights Reserved. 本后台系统由X前端框架提供前端技术支持</div>
 </div>
 <!-- 底部结束 -->
 <!-- 背景切换开始 -->
