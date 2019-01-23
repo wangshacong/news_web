@@ -63,7 +63,7 @@
             </li>
             <li class="list">
                 <a href="javascript:;">
-                    <i class="iconfont">&#xe6a3;</i>杭州实创2<i class="iconfont nav_right">&#xe697;</i>
+                    <i class="iconfont">&#xe6a3;</i>杭州实创<i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li>
