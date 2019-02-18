@@ -238,19 +238,19 @@ class AdminController extends Controller
                 $content->news_pic = '/'.$request->pic->store('news3_pic/'.date('Ymd'));
             }
         }
-        if(in_array(4,$web)){
+        if (in_array(4, $web)) {
             $zuozhe = \Session::get('username');
             $content = new Article4;
             $content->title = $request->title;
             $content->zuozhe = $zuozhe;
-            $fenlei = Fenlei4::where('fenlei_name','公司')->get();
+            $fenlei = Fenlei4::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content->fenlei_id = $fenlei->id;
             $content->content = $request->content;
-            $content->dianji = rand(100,1000);
-            if($request->hasFile('pic')){
+            $content->dianji = rand(100, 1000);
+            if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news4_pic/'.date('Ymd'));
             }
         }
