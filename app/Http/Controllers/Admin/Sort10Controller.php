@@ -36,6 +36,7 @@ class Sort10Controller extends Controller
         $content->zuozhe = $zuozhe;
         $content->fenlei_id = $request->fenlei;
         $content->content = $request->content;
+        $content->create_time = date('Y-m-d',time());
         $content->dianji = rand(100,1000);
         if($request->hasFile('pic')){
             $content->news_pic = '/'.$request->pic->store('news10_pic/'.date('Ymd'));
