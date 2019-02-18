@@ -91,9 +91,6 @@
 									<a style="text-decoration:none" onclick="member_password('修改密码','member-password.html','10001','600','400')" href="javascript:;" title="修改密码">
 										<i class="layui-icon">&#xe631;</i>
 									</a>-->
-                            <a title="删除" href="news1/{{$v['id']}}/destroy" onclick="member_del(this,'1')" style="text-decoration:none">
-                                <i class="layui-icon">&#xe640;</i>
-                            </a>
                             <script language="JavaScript">
                                 function delete_confirm(e) {
                                     if (event.srcElement.outerText == "删除") {

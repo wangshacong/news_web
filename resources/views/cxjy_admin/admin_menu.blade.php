@@ -28,12 +28,12 @@
                     </li>
                 </ul>
             </li>
-            <li class="list">
+            {{--  <li class="list">
                 <a href="/cxjy_admin/allsort/create">
                     <i class="iconfont">&#xe6a3;</i>添加分类 <i class="iconfont nav_right">&#xe697;</i>
                 </a>
 
-            </li>
+            </li>  --}}
             <li class="list" current>
                 <a href="/cxjy_admin/article/create">
                     <i class="iconfont">&#xe761;</i> 发布新闻

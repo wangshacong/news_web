@@ -212,7 +212,6 @@ class AdminController extends Controller
             $content2->title = $request->title;
             $content2->zuozhe = $zuozhe;
             $fenlei = Fenlei2::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->id;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content2->fenlei_id = $fenlei->id;
@@ -229,7 +228,6 @@ class AdminController extends Controller
             $content3->title = $request->title;
             $content3->zuozhe = $zuozhe;
             $fenlei = Fenlei3::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content3->fenlei_id = $fenlei->id;
@@ -247,7 +245,6 @@ class AdminController extends Controller
             $content4->title = $request->title;
             $content4->zuozhe = $zuozhe;
             $fenlei = Fenlei4::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content4->fenlei_id = $fenlei->id;
@@ -265,7 +262,6 @@ class AdminController extends Controller
             $content5->title = $request->title;
             $content5->zuozhe = $zuozhe;
             $fenlei = Fenlei5::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content5->fenlei_id = $fenlei->id;
@@ -282,7 +278,6 @@ class AdminController extends Controller
             $content6->title = $request->title;
             $content6->zuozhe = $zuozhe;
             $fenlei = Fenlei6::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content6->fenlei_id = $fenlei->id;
@@ -300,7 +295,6 @@ class AdminController extends Controller
             $content7->title = $request->title;
             $content7->zuozhe = $zuozhe;
             $fenlei = Fenlei7::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content7->fenlei_id = $fenlei->id;
@@ -318,7 +312,6 @@ class AdminController extends Controller
             $content8->title = $request->title;
             $content8->zuozhe = $zuozhe;
             $fenlei = Fenlei8::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content8->fenlei_id = $fenlei->id;
@@ -336,7 +329,6 @@ class AdminController extends Controller
             $content9->title = $request->title;
             $content9->zuozhe = $zuozhe;
             $fenlei = Fenlei9::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content9->fenlei_id = $fenlei->id;
@@ -354,7 +346,6 @@ class AdminController extends Controller
             $content10->title = $request->title;
             $content10->zuozhe = $zuozhe;
             $fenlei = Fenlei10::where('fenlei_name','公司')->first();
-            dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content10->fenlei_id = $fenlei->id;
