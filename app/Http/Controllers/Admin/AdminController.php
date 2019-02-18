@@ -221,6 +221,7 @@ class AdminController extends Controller
             if($request->hasFile('pic')){
                 $content->news_pic = '/'.$request->pic->store('news2_pic/'.date('Ymd'));
             }
+            $content->save();
         }
         if (in_array(3, $web)) {
             $zuozhe = \Session::get('username');
@@ -237,6 +238,7 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news3_pic/'.date('Ymd'));
             }
+            $content->save();
         }
         if (in_array(4, $web)) {
             $zuozhe = \Session::get('username');
@@ -253,6 +255,7 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news4_pic/'.date('Ymd'));
             }
+            $content->save();        
         }
         if (in_array(5, $web)) {
             $zuozhe = \Session::get('username');
@@ -269,6 +272,7 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news5_pic/'.date('Ymd'));
             }
+            $content->save();
         }
         if (in_array(6, $web)) {
             $zuozhe = \Session::get('username');
@@ -285,6 +289,7 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news6_pic/'.date('Ymd'));
             }
+            $content->save();
         }
         if (in_array(7, $web)) {
             $zuozhe = \Session::get('username');
@@ -301,6 +306,7 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news7_pic/'.date('Ymd'));
             }
+            $content->save();
         }
         if (in_array(8, $web)) {
             $zuozhe = \Session::get('username');
@@ -317,6 +323,7 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news8_pic/'.date('Ymd'));
             }
+            $content->save();
         }
         if (in_array(9, $web)) {
             $zuozhe = \Session::get('username');
@@ -333,6 +340,7 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news9_pic/'.date('Ymd'));
             }
+            $content->save();
         }
         if (in_array(10, $web)) {
             $zuozhe = \Session::get('username');
