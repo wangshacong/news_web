@@ -30,7 +30,7 @@
 
                 <div class="layui-form-item">
 
-                    <div class="layui-inline">
+                    {{-- <div class="layui-inline">
                         <label class="layui-form-label">选择分类</label>
                         <div class="layui-input-inline">
                             <select name="fenlei" id="sort" lay-verify="required" lay-search="" style="z-index:2;">
@@ -40,7 +40,7 @@
                                 @endforeach
                             </select>
                         </div>
-                    </div>
+                    </div> --}}
                     {{-- <div class="sort" style="width:100px;height:50px;border:1px solid red;">
                         <select name="fenlei" id="sort">
                             <option value="">请选择</option>
@@ -64,8 +64,16 @@
                 </div>
                 <label class="layui-form-label">发布至:</label>
                 <div class="layui-input-block">
-                    <input type="checkbox" name="like[1]" value="1" title="网站1">
-                    <input type="checkbox" name="like[2]" value="2" title="网站2" checked="">
+                    <input type="checkbox" name="like[1]" value="1" title="上海">
+                    <input type="checkbox" name="like[2]" value="2" title="杭州">
+                    <input type="checkbox" name="like[2]" value="3" title="广州">
+                    <input type="checkbox" name="like[2]" value="4" title="天津">
+                    <input type="checkbox" name="like[2]" value="5" title="浙江">
+                    <input type="checkbox" name="like[2]" value="6" title="厦门">
+                    <input type="checkbox" name="like[2]" value="7" title="南京">
+                    <input type="checkbox" name="like[2]" value="8" title="山东">
+                    <input type="checkbox" name="like[2]" value="9" title="深圳">
+                    <input type="checkbox" name="like[2]" value="10" title="北京">
                     {{-- <input type="checkbox" name="like[3]" value="3" title="网站3"> --}}
                 </div>
 
