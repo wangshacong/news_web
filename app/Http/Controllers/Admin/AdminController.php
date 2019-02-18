@@ -225,146 +225,146 @@ class AdminController extends Controller
         }
         if (in_array(3, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article3;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content3 = new Article3;
+            $content3->title = $request->title;
+            $content3->zuozhe = $zuozhe;
             $fenlei = Fenlei3::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->create_time = date('Y-m-d',time());
-            $content->dianji = rand(100, 1000);
+            $content3->fenlei_id = $fenlei->id;
+            $content3->content = $request->content;
+            $content3->create_time = date('Y-m-d',time());
+            $content3->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news3_pic/'.date('Ymd'));
+                $content3->news_pic = '/'.$request->pic->store('news3_pic/'.date('Ymd'));
             }
-            $content->save();
+            $content3->save();
         }
         if (in_array(4, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article4;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content4 = new Article4;
+            $content4->title = $request->title;
+            $content4->zuozhe = $zuozhe;
             $fenlei = Fenlei4::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->dianji = rand(100, 1000);
-            $content->create_time = date('Y-m-d',time());
+            $content4->fenlei_id = $fenlei->id;
+            $content4->content = $request->content;
+            $content4->dianji = rand(100, 1000);
+            $content4->create_time = date('Y-m-d',time());
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news4_pic/'.date('Ymd'));
+                $content4->news_pic = '/'.$request->pic->store('news4_pic/'.date('Ymd'));
             }
-            $content->save();        
+            $content4->save();        
         }
         if (in_array(5, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article5;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content5 = new Article5;
+            $content5->title = $request->title;
+            $content5->zuozhe = $zuozhe;
             $fenlei = Fenlei5::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->dianji = rand(100, 1000);
+            $content5->fenlei_id = $fenlei->id;
+            $content5->content = $request->content;
+            $content5->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news5_pic/'.date('Ymd'));
+                $content5->news_pic = '/'.$request->pic->store('news5_pic/'.date('Ymd'));
             }
-            $content->save();
+            $content5->save();
         }
         if (in_array(6, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article6;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content6 = new Article6;
+            $content6->title = $request->title;
+            $content6->zuozhe = $zuozhe;
             $fenlei = Fenlei6::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->create_time = date('Y-m-d',time());
-            $content->dianji = rand(100, 1000);
+            $content6->fenlei_id = $fenlei->id;
+            $content6->content = $request->content;
+            $content6->create_time = date('Y-m-d',time());
+            $content6->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news6_pic/'.date('Ymd'));
+                $content6->news_pic = '/'.$request->pic->store('news6_pic/'.date('Ymd'));
             }
-            $content->save();
+            $content6->save();
         }
         if (in_array(7, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article7;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content7 = new Article7;
+            $content7->title = $request->title;
+            $content7->zuozhe = $zuozhe;
             $fenlei = Fenlei7::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->create_time = date('Y-m-d',time());
-            $content->dianji = rand(100, 1000);
+            $content7->fenlei_id = $fenlei->id;
+            $content7->content = $request->content;
+            $content7->create_time = date('Y-m-d',time());
+            $content7->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news7_pic/'.date('Ymd'));
+                $content7->news_pic = '/'.$request->pic->store('news7_pic/'.date('Ymd'));
             }
-            $content->save();
+            $content7->save();
         }
         if (in_array(8, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article8;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content8 = new Article8;
+            $content8->title = $request->title;
+            $content8->zuozhe = $zuozhe;
             $fenlei = Fenlei8::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->create_time = date('Y-m-d',time());
-            $content->dianji = rand(100, 1000);
+            $content8->fenlei_id = $fenlei->id;
+            $content8->content = $request->content;
+            $content8->create_time = date('Y-m-d',time());
+            $content8->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news8_pic/'.date('Ymd'));
+                $content8->news_pic = '/'.$request->pic->store('news8_pic/'.date('Ymd'));
             }
-            $content->save();
+            $content8->save();
         }
         if (in_array(9, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article9;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content9 = new Article9;
+            $content9->title = $request->title;
+            $content9->zuozhe = $zuozhe;
             $fenlei = Fenlei9::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->create_time = date('Y-m-d',time());
-            $content->dianji = rand(100, 1000);
+            $content9->fenlei_id = $fenlei->id;
+            $content9->content = $request->content;
+            $content9->create_time = date('Y-m-d',time());
+            $content9->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news9_pic/'.date('Ymd'));
+                $content9->news_pic = '/'.$request->pic->store('news9_pic/'.date('Ymd'));
             }
-            $content->save();
+            $content9->save();
         }
         if (in_array(10, $web)) {
             $zuozhe = \Session::get('username');
-            $content = new Article10;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content10 = new Article10;
+            $content10->title = $request->title;
+            $content10->zuozhe = $zuozhe;
             $fenlei = Fenlei10::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->fenlei_name;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->dianji = rand(100, 1000);
+            $content10->fenlei_id = $fenlei->id;
+            $content10->content = $request->content;
+            $content10->dianji = rand(100, 1000);
             $content->create_time = date('Y-m-d',time());
             if ($request->hasFile('pic')) {
-                $content->news_pic = '/'.$request->pic->store('news10_pic/'.date('Ymd'));
+                $content10->news_pic = '/'.$request->pic->store('news10_pic/'.date('Ymd'));
             }
-            if($content->save()){
+            if($content10->save()){
                 return redirect('/cxjy_admin')->with('success','发布成功');
             } else {
                 return back()->with('error','发布失败');
