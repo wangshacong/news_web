@@ -208,20 +208,20 @@ class AdminController extends Controller
         }
         if(in_array(2,$web)){
             $zuozhe = \Session::get('username');
-            $content = new Article2;
-            $content->title = $request->title;
-            $content->zuozhe = $zuozhe;
+            $content2 = new Article2;
+            $content2->title = $request->title;
+            $content2->zuozhe = $zuozhe;
             $fenlei = Fenlei2::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->id;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
-            $content->fenlei_id = $fenlei->id;
-            $content->content = $request->content;
-            $content->dianji = rand(100,1000);
+            $content2->fenlei_id = $fenlei->id;
+            $content2->content = $request->content;
+            $content2->dianji = rand(100,1000);
             if($request->hasFile('pic')){
-                $content->news_pic = '/'.$request->pic->store('news2_pic/'.date('Ymd'));
+                $content2->news_pic = '/'.$request->pic->store('news2_pic/'.date('Ymd'));
             }
-            $content->save();
+            $content2->save();
         }
         if (in_array(3, $web)) {
             $zuozhe = \Session::get('username');
@@ -253,6 +253,7 @@ class AdminController extends Controller
             $content->fenlei_id = $fenlei->id;
             $content->content = $request->content;
             $content->dianji = rand(100, 1000);
+            $content->create_time = date('Y-m-d',time());
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news4_pic/'.date('Ymd'));
             }
@@ -286,6 +287,7 @@ class AdminController extends Controller
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content->fenlei_id = $fenlei->id;
             $content->content = $request->content;
+            $content->create_time = date('Y-m-d',time());
             $content->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news6_pic/'.date('Ymd'));
@@ -303,6 +305,7 @@ class AdminController extends Controller
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content->fenlei_id = $fenlei->id;
             $content->content = $request->content;
+            $content->create_time = date('Y-m-d',time());
             $content->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news7_pic/'.date('Ymd'));
@@ -320,6 +323,7 @@ class AdminController extends Controller
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content->fenlei_id = $fenlei->id;
             $content->content = $request->content;
+            $content->create_time = date('Y-m-d',time());
             $content->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news8_pic/'.date('Ymd'));
@@ -337,6 +341,7 @@ class AdminController extends Controller
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
             $content->fenlei_id = $fenlei->id;
             $content->content = $request->content;
+            $content->create_time = date('Y-m-d',time());
             $content->dianji = rand(100, 1000);
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news9_pic/'.date('Ymd'));
