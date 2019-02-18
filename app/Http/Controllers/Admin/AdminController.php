@@ -223,7 +223,7 @@ class AdminController extends Controller
             }
             $content2->save();
         }
-        if (in_array(3, $web)) {
+        if (in_array(3,$web)) {
             $zuozhe = \Session::get('username');
             $content3 = new Article3;
             $content3->title = $request->title;
@@ -241,7 +241,7 @@ class AdminController extends Controller
             }
             $content3->save();
         }
-        if (in_array(4, $web)) {
+        if (in_array(4,$web)) {
             $zuozhe = \Session::get('username');
             $content4 = new Article4;
             $content4->title = $request->title;
@@ -259,7 +259,7 @@ class AdminController extends Controller
             }
             $content4->save();        
         }
-        if (in_array(5, $web)) {
+        if (in_array(5,$web)) {
             $zuozhe = \Session::get('username');
             $content5 = new Article5;
             $content5->title = $request->title;
@@ -276,7 +276,7 @@ class AdminController extends Controller
             }
             $content5->save();
         }
-        if (in_array(6, $web)) {
+        if (in_array(6,$web)) {
             $zuozhe = \Session::get('username');
             $content6 = new Article6;
             $content6->title = $request->title;
@@ -294,7 +294,7 @@ class AdminController extends Controller
             }
             $content6->save();
         }
-        if (in_array(7, $web)) {
+        if (in_array(7,$web)) {
             $zuozhe = \Session::get('username');
             $content7 = new Article7;
             $content7->title = $request->title;
@@ -312,7 +312,7 @@ class AdminController extends Controller
             }
             $content7->save();
         }
-        if (in_array(8, $web)) {
+        if (in_array(8,$web)) {
             $zuozhe = \Session::get('username');
             $content8 = new Article8;
             $content8->title = $request->title;
@@ -330,7 +330,7 @@ class AdminController extends Controller
             }
             $content8->save();
         }
-        if (in_array(9, $web)) {
+        if (in_array(9,$web)) {
             $zuozhe = \Session::get('username');
             $content9 = new Article9;
             $content9->title = $request->title;
@@ -348,7 +348,7 @@ class AdminController extends Controller
             }
             $content9->save();
         }
-        if (in_array(10, $web)) {
+        if (in_array(10,$web)) {
             $zuozhe = \Session::get('username');
             $content10 = new Article10;
             $content10->title = $request->title;
