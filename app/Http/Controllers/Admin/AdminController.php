@@ -354,6 +354,7 @@ class AdminController extends Controller
             $content->fenlei_id = $fenlei->id;
             $content->content = $request->content;
             $content->dianji = rand(100, 1000);
+            $content->create_time = date('Y-m-d',time());
             if ($request->hasFile('pic')) {
                 $content->news_pic = '/'.$request->pic->store('news10_pic/'.date('Ymd'));
             }
