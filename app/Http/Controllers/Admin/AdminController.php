@@ -211,7 +211,7 @@ class AdminController extends Controller
             $content = new Article2;
             $content->title = $request->title;
             $content->zuozhe = $zuozhe;
-            $fenlei = Fenlei2::where('fenlei_name','公司')->get();
+            $fenlei = Fenlei2::where('fenlei_name','公司')->first();
             dump($fenlei);
             // $fenlei_name = $fenlei->id;
             // $fenlei = Fenlei2::where('fenlei_name',$fenlei_name)->first();
