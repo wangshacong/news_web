@@ -355,12 +355,13 @@ class AdminController extends Controller
             if ($request->hasFile('pic')) {
                 $content10->news_pic = '/'.$request->pic->store('news10_pic/'.date('Ymd'));
             }
-            if($content10->save()){
-                return redirect('/cxjy_admin')->with('success','发布成功');
-            } else {
-                return back()->with('error','发布失败');
-            }
+            // if($content10->save()){
+            //     return redirect('/cxjy_admin')->with('success','发布成功');
+            // } else {
+            //     return back()->with('error','发布失败');
+            // }
         }
+        return redirect('/cxjy_admin')->with('success','发布成功');
     }
 
      //全站添加分类页
