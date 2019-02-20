@@ -7,9 +7,8 @@
     <meta name="baidu_union_verify" content="e718eb0dd4320c884de414f6558fc60f" />
     <title>{{$v['title']}}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="keywords" content="互联网消费,互联网金融,互联网+,移动互联网,电子商务,手机游戏,O2O,创业创新,投资融资,智能设备,智能手机,VR及AR,AI人工智能">
-    <meta name="description" content="首届中国国际进口博览会上，智能机器人正在演示自动点焊。 翁奇羽摄(人民图片)最近，北京一家新开业的智能餐厅成了网红。在这家餐厅，不仅...">
-    <meta name="description" content="首届中国国际进口博览会上，智能机器人正在演示自动点焊。 翁奇羽摄(人民图片)最近，北京一家新开业的智能餐厅成了网红。在这家餐厅，不仅..." />
+    <meta name="keywords" content="{{$v['title']}}">
+    <meta name="description" content="{{sub_str(preg_replace('/<.*?>/','',$v['content']),0,25)}}">
     <meta property="og:type" content="article" />
     <meta property="og:title" content="能擦玻璃能炒菜还能说会道 机器人做餐厅主角 - 融资 - 中国创投网- 领先的互联网消费互动媒体" />
 

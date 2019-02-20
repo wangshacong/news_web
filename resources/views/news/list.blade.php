@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="renderer" content="webkit" />
 	<title>上海实创新闻网</title>
-	<meta name="keywords" content="互联网消费,互联网金融,互联网+,移动互联网,电子商务,手机游戏,O2O,创业创新,投资融资,智能设备,智能手机,VR及AR,AI人工智能" />
-	<meta name="description" content="中国创投网专注于互联网消费领域，每日专业提供互联网产品、智能设备及互联网服务等方面的最新资讯，呈现为网站、微博、微信、APP等全媒体新形态，是国内领先的互联网消费互动媒体。" />
+	<meta name="keywords" content="上海实创新闻,最新国际消息,最新实时新闻,融资,产业,研究,科技,金融,洞察,业界" />
+	<meta name="description" content="上海实创新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。" />
 	<script type="text/javDESCript">
 
 		var title="融资";
