@@ -8,7 +8,7 @@
     <title>{{$v['title']}}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="keywords" content="{{$v['title']}}">
-    <meta name="description" content="{{sub_str(preg_replace('/<.*?>/','',$v['content']),0,25)}}">
+    <meta name="description" content="{{mb_substr(preg_replace('/<.*?>/','',$v['content']),0,25)}}">
     <meta property="og:type" content="article" />
     <meta property="og:title" content="能擦玻璃能炒菜还能说会道 机器人做餐厅主角 - 融资 - 中国创投网- 领先的互联网消费互动媒体" />
 
